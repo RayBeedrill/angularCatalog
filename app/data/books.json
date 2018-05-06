@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "book1",
         "author": "author1",
         "genre": "genre1",
@@ -8,6 +9,7 @@
         "price": "100"
     },
     {
+        "id": 2,
         "name": "book2",
         "author": "author2",
         "genre": "genre2",
@@ -16,6 +18,7 @@
         "price": "200"
     },
     {
+        "id": 3,
         "name": "book3",
         "author": "author3",
         "genre": "genre3",
@@ -24,6 +27,7 @@
         "price": "300"
     },
     {
+        "id": 4,
         "name": "book4",
         "author": "author4",
         "genre": "genre4",
@@ -32,6 +36,7 @@
         "price": "400"
     },
     {
+        "id": 5,
         "name": "book5",
         "author": "author5",
         "genre": "genre5",
@@ -40,6 +45,7 @@
         "price": "500"
     },
     {
+        "id": 6,
         "name": "book6",
         "author": "author6",
         "genre": "genre6",
@@ -48,6 +54,7 @@
         "price": "600"
     },
     {
+        "id": 7,
         "name": "book7",
         "author": "author7",
         "genre": "genre7",
@@ -56,6 +63,7 @@
         "price": "700"
     },
     {
+        "id": 8,
         "name": "book8",
         "author": "author8",
         "genre": "genre8",
@@ -64,6 +72,7 @@
         "price": "800"
     },
     {
+        "id": 9,
         "name": "book9",
         "author": "author9",
         "genre": "genre9",
