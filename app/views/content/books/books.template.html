@@ -1,1 +1,9 @@
-<p>all books</p>
+<div class="col-md-3" ng-repeat="item in $ctrl.books">
+    <div class="well text-center">
+        <p>name: {{item.name}}</p>
+        <p>author: {{item.author}}</p>
+        <p>genre: {{item.genre}}</p>
+        <p>short description: {{item.shortDesc}}</p>
+        <p>price: {{item.price}}</p>
+    </div>
+</div>
