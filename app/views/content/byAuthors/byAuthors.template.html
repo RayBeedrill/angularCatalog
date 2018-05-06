@@ -1,1 +1,21 @@
-by authors
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <app-filter books="$ctrl.books" type-attr="$ctrl.filters.author" current-value="$ctrl.authorFilter"></app>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3" ng-repeat="item in $ctrl.books | filter: $ctrl.authorFilter">
+            <div class="well text-center">
+                <p>name: {{item.name}}</p>
+                <p>author: {{item.author}}</p>
+                <p>genre: {{item.genre}}</p>
+                <p>short description: {{item.shortDesc}}</p>
+                <p>price: {{item.price}}</p>
+                <p>
+                    <a class="btn btn-default" href="#!/books/{{item.id}}">additional information</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

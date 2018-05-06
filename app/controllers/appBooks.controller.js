@@ -9,5 +9,13 @@ angular.module("appCatalog").controller("appBooksController", [
         dataCoacher.then(function(response) {
             ctrl.books = response.data;
         });
+
+        ctrl.filters = {
+            genre: "genre",
+            author: "author"
+        };
+
+        ctrl.genreFilter = "";
+        ctrl.authorFilter = "";
     }
 ]);
