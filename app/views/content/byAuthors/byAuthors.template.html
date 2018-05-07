@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3" ng-repeat="item in $ctrl.books | filter: $ctrl.authorFilter">
+        <div class="col-md-3 book-list-item" ng-repeat="item in $ctrl.books | filter: $ctrl.authorFilter">
             <div class="well text-center">
                 <p>name: {{item.name}}</p>
                 <p>author: {{item.author}}</p>

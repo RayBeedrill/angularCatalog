@@ -20,17 +20,29 @@
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.animations.css" />
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
     <app-header></app-header>
-
-    <div ng-view></div>
-
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
+    </div>
+    
+    
+    
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app.js"></script>
     <script src="app.config.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+    <!-- Adds animation support in AngularJS -->
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+
 
     <script src="controllers/appBooks.controller.js"></script>
     
@@ -44,8 +56,6 @@
 
     <script src="services/dataCoacher.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
+
   </body>
 </html>
