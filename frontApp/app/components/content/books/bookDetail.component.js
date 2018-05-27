@@ -3,18 +3,13 @@ function appBookDetailController(
     $element,
     $attrs,
     $route,
+    $log,
     dataCoacher
 ) {
     var ctrl = this;
     var id = $route.current.params.id;
-    dataCoacher.then(function(response) {
-        if (response.status == 200) {
-            for (var item in response.data) {
-                if (response.data[item].id == id) {
-                    ctrl.info = response.data[item];
-                }
-            }
-        }
+    dataCoacher.booksById(id).then(function(response) {
+        ctrl.info = response.data;
     });
 }
 
